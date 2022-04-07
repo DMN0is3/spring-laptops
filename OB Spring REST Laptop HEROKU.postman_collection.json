@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "9b94bd95-b4ae-4969-a7e7-d02d177c01d3",
+		"name": "OB Spring REST Laptop HEROKU",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/laptops BUSCAR TODOS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://spring-laptops.herokuapp.com/api/laptops",
+					"protocol": "https",
+					"host": [
+						"spring-laptops",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"laptops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/laptops/{id} BUSCAR UNO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://spring-laptops.herokuapp.com/api/laptops/2",
+					"protocol": "https",
+					"host": [
+						"spring-laptops",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"laptops",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/laptops CREAR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"marca\": \"DELL\",\r\n        \"modelo\": \"Inspiron\",\r\n        \"pulgadas\": 15,\r\n        \"procesador\": \"I3\",\r\n        \"ram\": 8,\r\n        \"hdd\": 256,\r\n        \"peso\": 1.85,\r\n        \"precio\": 499,\r\n        \"disponible\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://spring-laptops.herokuapp.com/api/laptops",
+					"protocol": "https",
+					"host": [
+						"spring-laptops",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"laptops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/laptops ACTUALIZAR",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3,\r\n    \"marca\": \"DELL\",\r\n    \"modelo\": \"Inspiron\",\r\n    \"pulgadas\": 15,\r\n    \"procesador\": \"I7\",\r\n    \"ram\": 16,\r\n    \"hdd\": 500,\r\n    \"peso\": 2.85,\r\n    \"precio\": 1699.0,\r\n    \"disponible\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://spring-laptops.herokuapp.com/api/laptops",
+					"protocol": "https",
+					"host": [
+						"spring-laptops",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"laptops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/laptops/{id} BORRAR UNO",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://spring-laptops.herokuapp.com/api/laptops/3",
+					"protocol": "https",
+					"host": [
+						"spring-laptops",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"laptops",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/laptops/ BORRAR TODOS",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://spring-laptops.herokuapp.com/api/laptops",
+					"protocol": "https",
+					"host": [
+						"spring-laptops",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"laptops"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
